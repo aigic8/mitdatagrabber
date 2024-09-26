@@ -29,6 +29,7 @@ def main():
                 out_path = os.path.join(OUT_PREFIX, dir_name, file_name)
                 c.download_file(BUCKET_NAME, content["Key"], out_path)
                 print(f"({i}/{contents_count}) downloaded {out_path}")
+                i += 1
 
 
 main()
